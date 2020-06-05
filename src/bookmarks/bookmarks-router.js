@@ -2,6 +2,7 @@ const express = require('express');
 const bookmarks = require('../store');
 const logger = require('../logger');
 const { v4: uuid } = require('uuid');
+const { isWebUri } = require('valid-url');
 
 const bookmarkRouter = express.Router();
 const bodyParser = express.json();
@@ -23,6 +24,12 @@ bookmarkRouter
     }
     if(!url) {
       logger.error(`Url is required`);
+      return res
+        .status(400)
+        .send('Invalid data')
+    }
+    if(typeof url !== 'string' || url.length <= 0 || !isWebUri(url)) {
+      logger.error('Url is not valid');
       return res
         .status(400)
         .send('Invalid data')
