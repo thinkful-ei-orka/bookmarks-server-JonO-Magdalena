@@ -1,3 +1,11 @@
 {"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
 {"message":"Unauthorized request to path: /bookmarks/1","level":"error"}
 {"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"Bookmark with id 4b06324e-db5b-4dd0-9a8c-edcd850750e0 created","level":"info"}
+{"message":"Bookmark with id 290de646-5488-4556-9206-2577cb85066b created","level":"info"}
+{"message":"Invalid rating 6","level":"error"}
+{"message":"Bookmark with id 923c1095-7818-4c68-8f49-f71d80527aa4 created","level":"info"}
+{"message":"Bookmark with id 6ebd42f5-7699-4026-9718-47a6cf289d73 created","level":"info"}
